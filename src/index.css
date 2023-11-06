@@ -1,0 +1,97 @@
+* {
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  transition: all 400ms;
+  user-select: none;
+}
+
+.App {
+  display: flex;
+  height: 100dvh;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header * {
+  margin: 10px;
+}
+
+.options {
+  display: flex;
+  gap: 10px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+button {
+  background-color: white;
+  border: none;
+  font-size: 16px;
+}
+
+h4:hover,
+button:hover {
+  cursor: none;
+  transform: scale(1.2);
+  color: blue;
+}
+
+.options h4:nth-child(2):hover {
+  color: orangered;
+}
+
+.options h4:nth-child(1):hover {
+  color: green;
+}
+
+h1 {
+  font-size: 100px;
+}
+.vowels,
+.consonants,
+h1 {
+  animation: opacity 1s;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer h4 {
+  margin: 20px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+
+footer h4:hover {
+  color: purple;
+}
+
+span {
+  color: #adf802;
+}
